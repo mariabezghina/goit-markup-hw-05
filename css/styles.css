@@ -251,7 +251,6 @@ img {
   background-color: #404bbf;
 }
 
-/* Backdrop */
 .backdrop {
   position: fixed;
   top: 0;
@@ -268,14 +267,12 @@ img {
   transition: opacity 250ms ease, visibility 250ms ease;
 }
 
-/* Показ при класі is-open */
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 
-/* Модальне вікно */
 .modal {
   background-color: #fff;
   padding: 40px;
@@ -286,7 +283,6 @@ img {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.14), 0 2px 1px rgba(0,0,0,0.2);
 }
 
-/* Кнопка закриття */
 .modal-close {
   position: absolute;
   top: 24px;
@@ -296,7 +292,6 @@ img {
   cursor: pointer;
 }
 
-/* Стилі для полів */
 .form-field {
   display: flex;
   flex-direction: column;
@@ -318,7 +313,6 @@ img {
   padding: 8px;
 }
 
-/* Кнопка */
 .modal-btn {
   display: block;
   width: 100%;
