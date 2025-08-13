@@ -37,63 +37,6 @@
         <div class="container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button type="button" class="hero-button">Order Service</button>
-
-        <!-- Backdrop -->
-        <div class="backdrop">
-          <div class="modal">
-            <button type="button" class="modal-close">
-              <svg width="8" height="8">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-            <p class="modal-title">Leave your contacts and we will call you back</p>
-            
-            <form class="modal-form">
-              <label class="form-field">
-                <span>Name</span>
-                <div class="input-wrapper">
-                  <svg width="18" height="18">
-                    <use href="./images/icons.svg#icon-user"></use>
-                  </svg>
-                  <input type="text" name="name" required>
-                </div>
-              </label>
-
-              <label class="form-field">
-                <span>Phone</span>
-                <div class="input-wrapper">
-                  <svg width="18" height="18">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                  </svg>
-                  <input type="tel" name="phone" required>
-                </div>
-              </label>
-
-              <label class="form-field">
-                <span>Email</span>
-                <div class="input-wrapper">
-                  <svg width="18" height="18">
-                    <use href="./images/icons.svg#icon-email"></use>
-                  </svg>
-                  <input type="email" name="email" required>
-                </div>
-              </label>
-
-              <label class="form-field">
-                <span>Comment</span>
-                <textarea name="comment" placeholder="Text input"></textarea>
-              </label>
-
-              <label class="checkbox-field">
-                <input type="checkbox" name="policy" required>
-                <span>I accept the terms and conditions of the <a href="#">Privacy Policy</a></span>
-              </label>
-
-              <button type="submit" class="modal-btn">Send</button>
-            </form>
-          </div>
-        </div>
-
         </div>
         </section>
 
@@ -451,6 +394,70 @@
 
     </div>
     </footer>
+<!-- Modal Backdrop -->
+    <div class="mdl-bck">
+      <div class="mdl-win">
+        <button type="button" class="mdl-close">
+          <svg class="mdl-close-icon" width="8" height="8">
+            <use href="./images/icons/modal window/symbols.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <p class="mdl-title">Leave your contacts and we will call you back</p>
+
+        <form class="mdl-form">
+          <div class="mdl-field">
+            <label for="user-name" class="mdl-label">Name</label>
+            <div class="mdl-input-wrap">
+              <input id="user-name" name="user-name" type="text" class="mdl-input" />
+              <svg class="mdl-input-icon" width="18" height="24">
+                <use href="./images/icons/modal window/symbols.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="mdl-field">
+            <label for="user-phone" class="mdl-label">Phone</label>
+            <div class="mdl-input-wrap">
+              <input id="user-phone" name="user-phone" type="text" class="mdl-input" />
+              <svg class="mdl-input-icon" width="18" height="24">
+                <use href="./images/icons/modal window/symbols.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="mdl-field">
+            <label for="user-email" class="mdl-label">Email</label>
+            <div class="mdl-input-wrap">
+              <input id="user-email" name="user-email" type="text" class="mdl-input" />
+              <svg class="mdl-input-icon" width="18" height="24">
+                <use href="./images/icons/modal window/symbols.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="mdl-comment">
+            <label for="user-comment" class="mdl-label">Comment</label>
+            <textarea id="user-comment" name="user-comment" placeholder="Text input" class="mdl-textarea"></textarea>
+          </div>
+
+          <div class="mdl-privacy">
+            <input id="user-privacy" type="checkbox" name="user-privacy" value="true" class="mdl-check visually-hidden" />
+            <label for="user-privacy" class="mdl-privacy-label">
+              <span class="mdl-checkbox">
+                <svg class="mdl-check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="mdl-privacy-link">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="submit" class="mdl-submit">Send</button>
+        </form>
+      </div>
+    </div>
 
 
 </body>
